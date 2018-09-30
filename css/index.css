@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+
+html,body{
+margin:0;
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+background-color:#fafafa;
+}
+#bodyWrapper{
+	width:100%;
+	height:100%;
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:center;
+}
+
+header{
+width: 100%;
+height: 10%;
+background-color:white;
+/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+display: flex;
+flex-direction: row;
+box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+/* background-color: lightcoral; */
+}
+input{
+  border: none;
+  background-color: rgba(0,0,0,0.2);
+  width: 10vw;
+  height: 5.2vh;
+  font-family: 'arial', sans-serif;
+  transition: width 0.4s linear;
+  font-size:.7em;
+  background-image: url("../icons/search.png");
+  background-position: 5px 5px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 3em;
+}
+input:focus{
+outline:none;
+width: 15vw;
+}
+
+#topLeftMenu{
+  position: relative;
+  left: 0%;
+  width: 40%;
+  height: 100%;
+  /* border: 1px solid pink; */
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+}
+#headerText{
+  width: 80%;
+  height: 100%;
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: flex-end;
+}
+#headerText p{
+  text-transform:uppercase;
+  align-self:center;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  word-spacing: .3em;
+  position: relative;
+  right: 0;
+}
+#nameDiv{
+width:20%;
+height: 100%;
+/* border: 1px solid blue; */
+position: relative;
+align-self: flex-start;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+}
+#initial{
+color: white;
+background: dimgray;
+font-size: 2em;
+padding: .1em .3em .1em .3em;
+border: 1px solid dimgray;
+box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+#topRightMenu{
+  position: relative;
+  width: 60%;
+  height: 100%;
+  /* border: 1px solid brown; */
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  cursor: ;
+}
+#topRightMenuWrapper{
+width: 100%;
+height: 100%;
+align-self: flex-end;
+/* border: 1px solid pink; */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+#topRightUl{
+  list-style-type: none;
+  text-transform: uppercase;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  /* align-self: flex-end; */
+}
+#topRightUl li{
+  display: inline;
+  font-size: 1.2em;
+  padding-left: 1em;
+  cursor: pointer;
+  color: rgba(0,0,0,0.7);
+
+}
+
+
+#leftRight{
+	border:2px solid pinks;
+	width:65%;
+	height:70%;
+}
+#leftRightWrapper{
+	width:100%;
+	height:100%;
+	display:flex;
+	flex-direction:row;
+}
+#left{
+	width:100%;
+	height:100%;
+	background-image: url("../images/skyUp.jpg");
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	box-shadow:0 19px 38px rgba(0,0,0,0.30),
+			   0 15px 12px rgba(0,0,0,0.22);
+}
+#leftOverlay{
+	width:100%;
+	height:100%;
+	background-color:rgba(0, 0, 0, 0.8);
+	border:;
+}
+#right{
+	width:100%;
+	height:100%;
+	background:coral;
+	align-self:;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 
+				0 6px 6px rgba(0,0,0,0.23);
+	margin-top:-8vh;
+	padding-bottom:15vh;
+}
