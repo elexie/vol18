@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
-
 html,body{
 margin:0;
 width: 100%;
@@ -27,7 +26,7 @@ flex-direction: row;
 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 /* background-color: lightcoral; */
 }
-input{
+#searchBox{
   border: none;
   background-color: rgba(0,0,0,0.2);
   width: 10vw;
@@ -91,7 +90,20 @@ padding: .1em .3em .1em .3em;
 border: 1px solid dimgray;
 box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
-
+#simulateText{
+	color:white;
+	font-family:'Ubuntu Condensed', sans-serif;
+	font-size:2.3em;
+	margin-left:1em;
+}
+#simulateTextDesc{
+	color:white;
+	font-family:'Arial', sans-serif;
+	font-size:.8em;
+	margin-top:-1em;
+	margin-left:4em;
+	margin-right:4em;
+}
 #topRightMenu{
   position: relative;
   width: 60%;
@@ -148,12 +160,30 @@ align-items: center;
 	background-size:cover;
 	box-shadow:0 19px 38px rgba(0,0,0,0.30),
 			   0 15px 12px rgba(0,0,0,0.22);
+	-webkit-animation: slide 20s linear infinite;
+}
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: 80% 0; }
 }
 #leftOverlay{
 	width:100%;
 	height:100%;
 	background-color:rgba(0, 0, 0, 0.8);
 	border:;
+}
+#leftOverlayText{
+	width:50vh;
+	height:40vh;
+	border:3px solid white;
+	position:absolute;
+	top:35%;
+	left:20%;
+	right:;
+}
+#leftOverlayTextWrapper{
+	width:100%;
+	height:100%;
 }
 #right{
 	width:100%;
@@ -164,4 +194,38 @@ align-items: center;
 				0 6px 6px rgba(0,0,0,0.23);
 	margin-top:-8vh;
 	padding-bottom:15vh;
+}
+#rightWrapper{
+	width:100%;
+	height:100%;
+}
+#formWrapper{
+width:100%;
+height:100%;
+display:flex;
+padding-left:;
+align-items:center;
+justify-content:center;
+}
+#formWrapper2{
+	margin-top:3em;
+}
+.amber{
+border: .2px solid white;
+
+  background-color: rgba(0,0,0,0.2);
+  width: 10vw;
+  height: 5.2vh;
+  font-family: 'arial', sans-serif;
+  transition: width 0.4s linear;
+  font-size:.7em;
+  
+  padding-left: 3em;
+  color:white;
+/**  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 
+				0 6px 6px rgba(0,0,0,0.23); */
+  box-shadow:				0 8px 6px -6px black;
+}
+::placeholder {
+    color: white;
 }
